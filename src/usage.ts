@@ -48,7 +48,7 @@ let baseValue = 1101;
 
 const baseUnitId = 4;
 const beautifullString: string = convert(units, baseUnitId, baseValue);
-console.log(beautifullString);
+console.log("Beautifull String: ", beautifullString);
 
 const convertedUnits: Unit[] = convertRaw(units, baseUnitId, baseValue);
-console.log("Converted Units: ", convertedUnits);
+console.log("Raw Converted Units: ", convertedUnits);
