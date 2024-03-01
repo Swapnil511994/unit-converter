@@ -90,6 +90,11 @@ describe("Unit Converter Tests", () => {
     expect(callWithNoUnits.trim()).toBe("Unable to convert unit");
   });
 
+  test("Return <Custom Message> in case of error and fallbackValue is provided", () => {
+    const callWithNoUnits = convert([], 4, 100, "my Error Message");
+    expect(callWithNoUnits.trim()).toBe("my Error Message");
+  });
+
   test("Return 'Unable to convert unit' when invalid base unit provided", () => {
     const callWithInvalidId = convert(units, 99, 100);
     expect(callWithInvalidId).toBe("Unable to convert unit");

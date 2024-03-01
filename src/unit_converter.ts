@@ -4,7 +4,8 @@ import { Unit } from "./unit.interface";
 export function convert(
   units: Unit[],
   baseUnitId: number | string,
-  value: number
+  value: number,
+  fallbackValue: string | null = null
 ): string {
   try {
     if (units.length <= 0) throw new Error("No Units Provided For Conversion");
@@ -65,7 +66,7 @@ export function convert(
     return strToReturn;
   } catch (error) {
     console.error("Error: ", error);
-    return "Unable to convert unit";
+    return fallbackValue !== null ? fallbackValue : "Unable to convert unit";
   }
 }
 
