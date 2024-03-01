@@ -1,5 +1,5 @@
 {
-  "name": "unit_converter",
+  "name": "arbitary_unit_converter",
   "version": "1.0.0",
   "description": "convert 1 unit to another, like boxes to cartons, apples to oranges, etc ",
   "main": "dist/index.js",
