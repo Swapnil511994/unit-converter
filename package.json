@@ -1,0 +1,30 @@
+{
+  "name": "unit_converter",
+  "version": "1.0.0",
+  "description": "convert 1 unit to another, like boxes to cartons, apples to oranges, etc ",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "start": "npm run build && node dist/usage.js"
+  },
+  "keywords": [
+    "unit",
+    "converter",
+    "apples",
+    "to",
+    "oranges"
+  ],
+  "author": "swapnil vishwakarma",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
